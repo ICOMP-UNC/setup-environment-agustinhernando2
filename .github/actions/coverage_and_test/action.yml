@@ -9,17 +9,10 @@ runs:
       run: |
         PROJECT_PATH=$(pwd)
 
-<<<<<<< HEAD
         # ToDo: run tests and show failed tests in such case
         ctest --test-dir build/tests --output-on-failure
 
         # ToDo: run coverage tests and save output file
-=======
-        # ToDo: Add documentation and describe better this command
-        ctest --test-dir build/tests --output-on-failure
-
-        # ToDo: Add documentation and describe better this command
->>>>>>> cd7a83c (CL:)
 
 
         gcovr -r $PROJECT_PATH . > $PROJECT_PATH/coverage.txt
@@ -29,11 +22,7 @@ runs:
         cat $PROJECT_PATH/coverage.txt
 
         # Find the value of correct coverage
-<<<<<<< HEAD
         # ToDo: show results
-=======
-        # ToDo: Add documentation and describe better this command
->>>>>>> cd7a83c (CL:)
         COVERAGE_RESULT=$(grep "TOTAL" $PROJECT_PATH/coverage.txt | awk '{print $NF}' | cut -d '%' -f 1)
 
         # Coverage lines GT 20
