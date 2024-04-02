@@ -3,5 +3,5 @@
 
 void greetings()
 {
-    printf("hello\n");
+    printf("Hello, World (from another world)\n");
 }
