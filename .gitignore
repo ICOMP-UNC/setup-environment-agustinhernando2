@@ -28,4 +28,5 @@
 # Dont track sonnar files
 .scannerwork/
 
-sonar-project.properties
+Pipeline.cmake
+
